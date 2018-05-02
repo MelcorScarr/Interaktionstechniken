@@ -6,7 +6,7 @@ import sys
 import time
 import csv
 import random
-from PyQt5 import QtGui, QtWidgets, QtCore
+from PyQt5 import QtGui, QtWidgets, QtCore, QtMultimedia
 
 
 class ExperimentRecorder(QtWidgets.QWidget):
@@ -18,6 +18,8 @@ class ExperimentRecorder(QtWidgets.QWidget):
         self.counter = -1
         self.timer = QtCore.QElapsedTimer()
         self.timer.start()
+        # See https://stackoverflow.com/questions/42845981/trying-adding-a-sound-event-using-qmediaplayer
+        self.player = QtMultimedia.QSound("whitenoise.wav")
 
         self.initUI()
 
@@ -84,6 +86,10 @@ class ExperimentRecorder(QtWidgets.QWidget):
         if self.counter == len(self.experiments):
             self.output_log()
         else:
+            if self.experiments[self.counter][1] == 'D':
+                self.player.play()
+            else:
+                self.player.stop()
             self.update()
 
     def paintEvent(self, event):
