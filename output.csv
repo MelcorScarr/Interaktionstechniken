@@ -1,10 +1,10 @@
-PID,Stimulus,Attentive,Distraction,Key,Correct,Time
-1,Experiment start,False,False,Q,False,48844052
-1,datei,True,False,Q,False,48846997
-1,tastatur,True,False,P,True,48849325
-1,Red,False,False,Q,True,48850544
-1,Green,False,False,P,True,48851547
-1,Green,False,False,Q,False,48852549
-1,mushroom,True,False,P,False,48853553
-1,mushroom,True,False,Q,True,48854555
-1,mushroom,True,False,P,False,48855557
+PID,Stimulus,Attentive,Distraction,Key,Correct,Timestamp,Reactiontime
+1,Experiment start,False,False,Q,False,52503787,1703
+1,bottle,True,True,Q,True,52506354,1565
+1,chair,True,True,P,False,52508747,1391
+1,Green,True,True,Q,False,52511179,1430
+1,Red,True,True,P,False,52513693,1511
+1,file,True,False,Q,True,52515837,1141
+1,ei,True,False,P,True,52519809,2970
+1,Red,True,False,Q,False,52521994,1184
+1,Red,True,False,Q,False,52525944,2947
