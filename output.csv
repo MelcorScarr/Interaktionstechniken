@@ -1,0 +1,10 @@
+PID,Stimulus,Attentive,Distraction,Key,Correct,Time
+1,Experiment start,False,False,Q,False,48844052
+1,datei,True,False,Q,False,48846997
+1,tastatur,True,False,P,True,48849325
+1,Red,False,False,Q,True,48850544
+1,Green,False,False,P,True,48851547
+1,Green,False,False,Q,False,48852549
+1,mushroom,True,False,P,False,48853553
+1,mushroom,True,False,Q,True,48854555
+1,mushroom,True,False,P,False,48855557
