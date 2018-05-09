@@ -1,0 +1,32 @@
+a) Which advantages do direct pointing devices have over indirect pointing devices? Name one use case where using a direct
+pointing device would not make any sense.
+Direct pointing devices generally need less mental work to be used, since there is no "intermediate" calculation required to transform the actions into actual output.
+However, there are often cases where direct pointing devices are not advisable. For example, work that needs to be highly precise, like a drone defusing a bomb or a mechanical helper in a surgery for a doctor, indirect input is preferable, since it allows for a device setting with higher precision.
+
+b) How would you characterize “Shift” based on the classification criteria mentioned in the Wikipedia article?
+A classification is not too easy. Let's go through the Wiki article classification step by step:
+
+ * direct vs. indirect input
+Shift is direct input as long as occlusion does not make the target ambiguous; once it is, the offset caused by the "scoping in" causes it to be indirect.
+
+ * absolute vs. relative movement
+Shift is always absolute, as in the distance moved in any case always is directly translatable into the output space.
+
+ * isotonic vs. elastic vs. isometric
+As is, Shift is a isotonic input method only, as it calculates distances. In theory, being based on a touch screen, it could also be used for isometric input, though this is not mentioned in the paper.
+
+ * position control vs. rate control
+Shift is a position control based input method, since the speed with which it is used has no effect.
+
+ * translation vs. rotation
+While touch screens nowadays offer rotation as input, this is not used in the case of shift. Translating (moving) the finger (the input device) is the primary method, however.
+
+ * degrees of freedom
+As used in the paper, Shift has two degrees of freedom (x and y axis)
+
+ * possible states
+Shift actually has two possible states: Occlusion and no occlusion, where the former will make a magnifying glass appear.
+
+c) What is the size of the display used in the study?
+The question of the size of the display is best answered by simply quoting the relating sentence in the paper:
+"The experiment was conducted on the IPAQ PDA described above. It has a 550 × 730mm, 240 × 320px, display produc-ing an effective resolution of 0.436px/mm." (Daniel Vogel, Patrick Baudisch, CHI 2007 Proceedings • Mobile Interaction Techniques I, p. 663)
